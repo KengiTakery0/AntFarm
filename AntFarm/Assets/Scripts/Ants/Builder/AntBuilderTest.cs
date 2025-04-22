@@ -17,7 +17,7 @@ public class AntBuilderTest : MonoBehaviour
             yield return new WaitForSeconds(1f);
             AntBuilder builder = new AntBuilder(AntPrefab, AntSprite);
 
-            var ant = builder.BuildWorker();
+            var ant = builder.BuildWorker(this.transform.position);
             ant.Move(true);
 
         }

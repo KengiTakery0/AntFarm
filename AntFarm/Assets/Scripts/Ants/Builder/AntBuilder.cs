@@ -12,7 +12,7 @@ public class AntBuilder
         AntSprite = antSprite;
     }
 
-    public WorkerAnt BuildWorker()
+    public WorkerAnt BuildWorker(Vector2 pos)
     {
         GameObject antObj = GameObject.Instantiate(Prefab);
         AntStats antStats = new()
@@ -27,7 +27,7 @@ public class AntBuilder
         Ant.Stats = antStats; 
         Ant.GetComponent<SpriteRenderer>().sprite = Ant.Stats.Sprite;
         Ant.transform.localScale = Ant.Stats.Size;
-
+        Ant.transform.position = pos;
         return Ant;
     }
     public FighterAnt BuildFighter()
