@@ -3,7 +3,8 @@ public enum Type
 {
     Muther,
     Worker,
-    Fighter
+    Fighter,
+    Larva
 }
 
 public class AntStats 

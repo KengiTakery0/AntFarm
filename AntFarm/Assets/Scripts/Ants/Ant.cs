@@ -4,6 +4,7 @@ public class Ant : MonoBehaviour
 {
     public AntStats Stats;
     public Vector2 MoveDir { get; set; }
+    public GameObject Target { get; set; }
     public virtual void Move(bool? random) { }
     public virtual void Grab(GameObject thing) { }
     public virtual void Carry(GameObject thing) { }
@@ -19,3 +20,4 @@ public class Ant : MonoBehaviour
     protected virtual void Move() { }
 
 }
+
