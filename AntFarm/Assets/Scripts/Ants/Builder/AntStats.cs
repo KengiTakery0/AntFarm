@@ -1,5 +1,5 @@
 using UnityEngine;
-public enum Type
+public enum AntType
 {
     Muther,
     Worker,
@@ -9,7 +9,7 @@ public enum Type
 
 public class AntStats 
 {
-    public Type Type { get; set; }
+    public AntType Type { get; set; }
     public float Speed { get; set; }
     public float Streng { get; set; }
     public Vector2 Size { get; set; }

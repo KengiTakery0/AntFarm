@@ -20,7 +20,10 @@ public class WorkerAnt : Ant
                 yield return new WaitForSecondsRealtime(1f);
                 rb.rotation = Random.Range(0, 360);
             }
-           
+            else
+            {
+
+            }
            
         }
     }
